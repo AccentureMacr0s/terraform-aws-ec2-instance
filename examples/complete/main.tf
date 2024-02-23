@@ -1,9 +1,10 @@
 provider "aws" {
   region = local.region
 }
-
-data "aws_availability_zones" "available" {}
-
+# check the namiņš of each service in the devops folders 
+## stage work:
+## data "aws_availability_zones" "available" {}
+who is the aws availability zones and what means available in this context
 locals {
   name   = "ex-${basename(path.cwd)}"
   region = "eu-west-1"
